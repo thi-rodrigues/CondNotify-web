@@ -9,24 +9,26 @@
     </span>
   </div>
 
-  <div class="cpf-password d-flex justify-content-center">
-    <mat-form-field>
-      <mat-label>CPF:</mat-label>
-      <input matInput>
-    </mat-form-field>
+  <div>
+    <form [formGroup]="form" action="" class="cpf-password d-flex justify-content-center">
+      <mat-form-field>
+        <mat-label>CPF:</mat-label>
+        <input matInput formControlName="cpf" mask="000.000.000-00">
+      </mat-form-field>
 
-    <mat-form-field>
-      <mat-label>Senha:</mat-label>
-      <input matInput [type]="hide() ? 'password' : 'text'" />
-      <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'"
-        [attr.aria-pressed]="hide()">
-        <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
-      </button>
-    </mat-form-field>
+      <mat-form-field>
+        <mat-label>Senha:</mat-label>
+        <input matInput formControlName="password" [type]="hide() ? 'password' : 'text'" />
+        <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide()">
+          <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+    </form>
   </div>
 
   <section class="w-100 d-flex justify-content-center">
-    <button mat-flat-button class="btn-login">Entrar</button>
+    <button mat-flat-button class="btn-login" (click)="login()">Entrar</button>
   </section>
 
   <footer class="">

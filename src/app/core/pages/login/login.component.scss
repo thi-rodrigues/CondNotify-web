@@ -11,6 +11,7 @@ $blue: #1C7CF2;
   background: linear-gradient(#019eff 0%, #43d8e4 55%, #1fcdaa 92%);
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   @media (max-width: 576px) {
     width: 100dvw;
     height: 100lvh;

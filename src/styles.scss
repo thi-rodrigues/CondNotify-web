@@ -1,9 +1,11 @@
 @import "font-awesome";
 
 $white: #ffffff;
-$blue: #1C7CF2;
+$blue: #1c7cf2;
+$gray: #3f3e3e;
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -17,7 +19,9 @@ body {
   font-size: 16px; /* Base size */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Kanit !important;
 }
 
@@ -57,14 +61,73 @@ mat-form-field {
 .mat-mdc-form-field-infix {
   height: 50px !important;
   mat-label {
-    color: $blue;
+    color: $gray;
   }
 }
 
 .mdc-line-ripple {
-  display: none;;
+  display: none;
 }
 
 .mat-mdc-form-field-flex {
   // height: 45px !important;
 }
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  // background-color: #fff !important;
+  background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+  &:hover {
+    // background-color: blue  !important;
+    background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+    // background-color: #fff !important;
+  }
+}
+
+.mat-mdc-form-field {
+}
+
+/* INICIO - MessageService */
+.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface {
+	border-radius: 5px !important;
+	background-color: transparent !important;
+	color: #fff !important;
+	max-width: 50px !important;
+	line-break: auto;
+	@media (max-width: 576px) {
+		max-width: 100% !important;
+	}
+}
+
+.msg-success, .msg-error, .msg-info, .msg-warning {
+  border-radius: 5px !important;
+	position: relative;
+	top: 111px; // baseado no height do header
+	right: 8px;
+	.mdc-button__label {
+		color: #fff;
+	}
+	@media (max-width: 576px) {
+		max-width: 100% !important;
+		right: 0;
+		top: 68px; // baseado no height do header
+	}
+}
+
+.msg-success {
+	// background-color: #198754 !important;
+	background-color: #04AA6D !important;
+}
+
+.msg-error {
+	// background-color: #dc3545 !important;
+	background-color: #f44336 !important;
+}
+
+.msg-info {
+	background-color: #2196F3 !important;
+}
+
+.msg-warning {
+	background-color: #ff9800 !important;
+}
+/* FIM - MessageService */

@@ -73,14 +73,13 @@ mat-form-field {
   // height: 45px !important;
 }
 
-.mdc-text-field--filled:not(.mdc-text-field--disabled) {
-  // background-color: #fff !important;
+.mat-mdc-text-field-wrapper:hover .mat-mdc-form-field-focus-overlay { // INPUT
+	opacity: 1 !important;
   background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
-  &:hover {
-    // background-color: blue  !important;
-    background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
-    // background-color: #fff !important;
-  }
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) { // INPUT
+  background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
 }
 
 .mat-mdc-form-field {

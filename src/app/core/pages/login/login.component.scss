@@ -44,19 +44,6 @@ $blue: #1C7CF2;
   // background-color: red;
 }
 
-.example-right-align {
-  text-align: right;
-  // background-color: blue;
-}
-
-input.example-right-align::-webkit-outer-spin-button,
-input.example-right-align::-webkit-inner-spin-button {
-  display: none;
-}
-
-input.example-right-align {
-  -moz-appearance: textfield;
-}
 /* FIM - LOGIN E SENHA */
 
 /* INNICIO - ENTRAR */
@@ -78,22 +65,6 @@ section {
   width: 333px;
   height: 45px;
   font-size: 12px;
-}
-
-.example-button-row .mat-mdc-button-base {
-  margin: 8px 8px 8px 0;
-}
-
-.example-flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.example-button-container {
-  display: flex;
-  justify-content: center;
-  width: 120px;
 }
 /* FIM - ENTRAR */
 

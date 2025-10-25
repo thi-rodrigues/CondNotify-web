@@ -1,0 +1,70 @@
+@import "font-awesome";
+
+$white: #ffffff;
+$blue: #1C7CF2;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: initial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f4f4f4;
+  font-size: 16px; /* Base size */
+}
+
+h1, h2, h3 {
+  font-family: Kanit !important;
+}
+
+label {
+  font-size: 0.75rem; // 12px
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+mat-form-field {
+  width: 333px;
+  // height: 45px !important;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6) !important;
+  margin-bottom: 1.5rem;
+  border-radius: 8px !important;
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+  height: 0 !important;
+}
+
+.mdc-text-field {
+  border-radius: 8px !important;
+  cursor: pointer;
+}
+
+.mat-mdc-form-field-infix {
+  height: 50px !important;
+  mat-label {
+    color: $blue;
+  }
+}
+
+.mdc-line-ripple {
+  display: none;;
+}
+
+.mat-mdc-form-field-flex {
+  // height: 45px !important;
+}

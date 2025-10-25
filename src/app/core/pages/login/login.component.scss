@@ -1,0 +1,107 @@
+$white: #ffffff;
+$blue: #1C7CF2;
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  margin: 0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  background: linear-gradient(#019eff 0%, #43d8e4 55%, #1fcdaa 92%);
+  width: 100vw;
+  height: 100vh;
+  @media (max-width: 576px) {
+    width: 100dvw;
+    height: 100lvh;
+  }
+}
+
+.box-login {
+  margin-top: 3.875rem; // 62px
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin: 1.625rem 0 3rem 0; //26px
+  span {
+    font-weight: bold;
+    font-size: 48px;
+    color: $white;
+  }
+}
+
+/* INICIO - LOGIN E SENHA */
+.cpf-password {
+  // background-color: yellow;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cpf-password mat-form-field + mat-form-field {
+  // background-color: red;
+}
+
+.example-right-align {
+  text-align: right;
+  // background-color: blue;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
+/* FIM - LOGIN E SENHA */
+
+/* INNICIO - ENTRAR */
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section {
+  display: table;
+}
+
+.btn-login {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
+  background-color: $blue !important;
+  width: 333px;
+  height: 45px;
+  font-size: 12px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+/* FIM - ENTRAR */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 1rem);
+  font-size: 12px;
+  color: $white;
+}

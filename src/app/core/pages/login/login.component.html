@@ -1,0 +1,40 @@
+<div class="wrapper">
+  <div class="box-login">
+    <img src="../../../../assets/img/svg/box-login.svg" alt="">
+  </div>
+
+  <div class="title d-flex justify-content-center">
+    <span>
+      CondNotify
+    </span>
+  </div>
+
+  <div class="cpf-password d-flex justify-content-center">
+    <mat-form-field>
+      <mat-label>CPF:</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Senha:</mat-label>
+      <input matInput [type]="hide() ? 'password' : 'text'" />
+      <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide()">
+        <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+
+  <section class="w-100 d-flex justify-content-center">
+    <button mat-flat-button class="btn-login">Entrar</button>
+  </section>
+
+  <footer class="">
+    <div>
+      ©trsystems
+    </div>
+    <div>
+      V1.0.0
+    </div>
+  </footer>
+</div>

@@ -1,0 +1,56 @@
+<div id="paginator">
+  <mat-icon *ngIf="currentPage === 1" class="disabled" fontIcon="first_page" />
+  <mat-icon
+    *ngIf="currentPage !== 1"
+    (click)="goToFirstPage()"
+    fontIcon="first_page"
+  />
+  <mat-icon
+    *ngIf="currentPage <= 1"
+    class="disabled"
+    fontIcon="arrow_back_ios_new"
+  />
+  <mat-icon
+    *ngIf="currentPage > 1"
+    (click)="goToPreviousPage()"
+    fontIcon="arrow_back_ios_new"
+  />
+  <div class="pages">
+    <p
+      [ngClass]="{ active: currentPage === current }"
+      *ngFor="let current of getPages()"
+      (click)="handlePaginator(current)"
+    >
+      {{ current }}
+    </p>
+  </div>
+  <mat-icon
+    *ngIf="currentPage >= pages"
+    class="disabled"
+    fontIcon="arrow_forward_ios"
+  />
+  <mat-icon
+    *ngIf="currentPage < pages"
+    (click)="goToNextPage()"
+    fontIcon="arrow_forward_ios"
+  />
+  <mat-icon
+    *ngIf="currentPage === (pages || 1)"
+    class="disabled"
+    fontIcon="last_page"
+  />
+  <mat-icon
+    *ngIf="currentPage !== (pages || 1)"
+    (click)="goToLastPage()"
+    fontIcon="last_page"
+  />
+  <div class="last-update" *ngIf="date">
+    <p>
+      Última atualização:
+      {{
+        date
+          | date : (language === "en" ? "yyyy-MM-dd HH:mm" : "dd/MM/yyyy HH:mm")
+      }}
+    </p>
+  </div>
+</div>

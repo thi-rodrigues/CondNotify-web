@@ -24,5 +24,13 @@ export const routes: Routes = [
         (c) => c.HomeComponent
       ),
     canActivate: []
+  },
+  {
+    path: 'https://thi-rodrigues.github.io/cond-notify-web/home',
+    loadComponent: () =>
+      import('./core/pages/home/home.component').then(
+        (c) => c.HomeComponent
+      ),
+    canActivate: []
   }
 ];

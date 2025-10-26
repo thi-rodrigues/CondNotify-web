@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "roteirizador-web": {
+    "cond-notify-web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/roteirizador-web",
+            "outputPath": "dist/cond-notify-web",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "roteirizador-web:build:production"
+              "buildTarget": "cond-notify-web:build:production"
             },
             "development": {
-              "buildTarget": "roteirizador-web:build:development"
+              "buildTarget": "cond-notify-web:build:development"
             }
           },
           "defaultConfiguration": "development"

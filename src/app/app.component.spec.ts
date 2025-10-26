@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'roteirizador-web' title`, () => {
+  it(`should have the 'cond-notify-web' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('roteirizador-web');
+    expect(app.title).toEqual('cond-notify-web');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, roteirizador-web');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, cond-notify-web');
   });
 });

@@ -41,6 +41,11 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "https://thiagorodrigues.github.io/cond-notify-web/",
+              "outputPath": "dist/cond-notify-web",
+              "optimization": true,
+              "sourceMap": false,
+              "extractLicenses": true,
               "budgets": [
                 {
                   "type": "initial",

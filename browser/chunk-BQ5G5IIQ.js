@@ -1,0 +1,1 @@
+import{Db as m,ca as n,hb as o,ib as a,zb as i}from"./chunk-JB5QS47Y.js";var s=(()=>{class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=n({type:e,selectors:[["app-home"]],standalone:!0,features:[m],decls:2,vars:0,template:function(t,p){t&1&&(o(0,"h1"),i(1,"Login Success!"),a())}})}return e})();export{s as HomeComponent};

@@ -1,1 +1,13 @@
-<h1>Login Success!</h1>
+
+<div class="home">
+  <h1>Login Success!</h1>
+
+  <h3>Minhas encomendas</h3>
+
+  <section class="orders">
+    <app-card-orders class="order" [routerLink]="['/order-details/1']"></app-card-orders>
+    <app-card-orders class="order" [routerLink]="['/order-details/2']"></app-card-orders>
+    <app-card-orders class="order" [routerLink]="['/order-details/3']"></app-card-orders>
+    <app-card-orders class="order" [routerLink]="['/order-details/4']"></app-card-orders>
+  </section>
+</div>
